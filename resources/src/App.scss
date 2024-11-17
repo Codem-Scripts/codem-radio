@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    user-select: none;
+    overflow: hidden;
+}
+
+* {
+    transition: linear 0.2 all;
+}
+
+.radio {
+    position: absolute;
+    width: 13.2613rem;
+    height: 37.875rem;
+
+    top: 464px;
+    left: 1704px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../Assets/radio.svg);
+
+
+    .radio_inside {
+        position: absolute;
+        width: 9.125rem;
+        height: 11.1875rem;
+        top: 19.2rem;
+        left: 2.3rem;
+      
+        .join-wrapper {
+          position: absolute;
+          width: 8rem;
+          height: 5.1rem;
+          top: 1.6rem;
+          left: 0.95rem;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+
+          .MoveText {
+            position: absolute;
+            width: 1.25rem;
+            height: 0.9375rem;
+            left: 2.75rem;
+            top: 4.9rem;
+
+            font-family: 'Oswald';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 0.625rem;
+            line-height: 0.9375rem;
+            z-index: 1;
+            color: rgba(0, 0, 0, 0.53);
+          }
+          .radio_code {
+            position: absolute;
+            width: 7rem;
+            height: 1.25rem;
+            top: 2.7rem;
+            left: 0rem;
+            font-family: 'Oswald';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.3795rem;
+            line-height: 90%;
+            color: #393C45;
+            z-index: 1;
+            background: transparent;
+            outline: none;
+            border: none;
+          }
+        
+          .settings-volume {
+            position: sticky;
+            width: 1.125rem;
+            height: 0.625rem;
+            left: 6.5rem;
+            margin-top: 1rem;
+            font-family: 'Oswald';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 0.4375rem;
+            line-height: 0.625rem;
+            color: #4271FF;
+          }
+        
+          .PlayerWrapper {
+            position: absolute;
+            width: 7.125rem;
+            height: 1.4375rem;
+            left: 0rem;
+            top: 3.1rem;
+            border-radius: 0.125rem;
+
+            overflow-y: hidden;
+            overflow-x: scroll;
+            display: flex;
+            background-color: rgba(57, 60, 69, 0.14);
+            &::-webkit-scrollbar {
+              display: none;
+            }
+        
+            .GetRadioPlayer {
+              position: relative;
+              float: left;
+              width: 1rem;
+              height: 1.2rem;
+              margin-left: 0.25rem;
+              left: -0.25rem;
+              
+
+        
+              .GetRadioPlayerLabel {
+                position: absolute;
+                width: 0.6875rem;
+                height: 0.625rem;
+                left: 0.33rem;
+                top: 0.2rem;
+                font-family: 'Oswald';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 0.4375rem;
+                line-height: 0.625rem;
+                color: #393C45;
+              }
+            }
+          }
+        
+          .radio_button {
+            position: absolute;
+            width: 1.6rem;
+            height: 1rem;
+            z-index: 50;
+          }
+        
+          .radio_group {
+            position: absolute;
+            width: 2.7rem;
+            height: 0.8rem;
+            left: -0.35rem;
+            top: -0.2rem;
+            z-index: 50;
+            font-family: 'Oswald';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 0.5625rem;
+            line-height: 0.8125rem;
+            color: #C9D4F4;
+            overflow: hidden;
+          }
+        
+          .radio_ID {
+            position: absolute;
+            width: 0.85rem;
+            height: 0.625rem;
+            left: 2.4rem;
+            top: 0rem;
+            z-index: 100;
+            font-family: 'Oswald';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.4375rem;
+            line-height: 0.625rem;
+            color: #FFFFFF;
+            text-align: end;
+          }
+          
+          .volume_settings {
+            position: sticky;
+            width: 4.0625rem;
+            height: 0.8125rem;
+            left: 0.75rem;
+            margin-top: -3.1rem;  
+            font-family: 'Oswald';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 0.5625rem;
+            line-height: 0.8125rem;
+            color: #393C45;
+          }
+        
+          .radio_connet_number {
+            position: sticky;
+            width: 6.3125rem;
+            height: 0.8125rem;
+            left: 0.75rem;
+            margin-top: -0.07rem; 
+            font-family: 'Oswald';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 0.5625rem;
+            line-height: 0.8125rem;
+            color: #393C45;
+          }
+        }
+    
+      }
+      
+
+
+    .radio_leave {
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        top: 15.5rem;
+        left: 9.25rem;
+        z-index: 50;
+    }
+
+
+    .radio_volume {
+        position: absolute;
+        width: 1.5rem;
+        height: 2rem;
+        top: 15.5rem;
+        z-index: 50;
+    }
+
+
+    .radio_join {
+        position: absolute;
+        width: 3.5938rem;
+        height: 3.375rem;
+        top: 26.5rem;
+        left: 7.4rem;
+    }
+
+    .jointext {
+        position: absolute;
+        width: 1.125rem;
+        height: 0.6875rem;
+        top: 28rem;
+        left: 8.5rem;
+
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.5625rem;
+        line-height: 0.6875rem;
+        text-align: center;
+        z-index: 50;
+    }
+
+    .settingstext {
+        position: absolute;
+        width: 2.125rem;
+        height: 0.6875rem;
+        left: 4rem;
+        top: 28rem;
+
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.5625rem;
+        line-height: 0.6875rem;
+        z-index: 50;
+
+    }
+
+    .enter_frequency {
+        position: absolute;
+        width: 3.625rem;
+        height: 0.4375rem;
+        left: 0rem;
+        top: 1.65rem;
+
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.5rem;
+        line-height: 90%;
+        color: rgba(57, 60, 69, 0.62);
+        z-index: 50;
+    }
+
+    .radio_settings {
+        position: absolute;
+        width: 3.5938rem;
+        height: 3.375rem;
+        top: 26.5rem;
+        left: 3rem;
+    }
+}
+
+
+
+.input-voice {
+    position: absolute;
+    width: 6.1875rem;
+    height: 0.375rem;
+
+    left: 0rem;
+    top: 1.2rem;
+    background: #393C4536;
+    border-radius: 1px;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    overflow: hidden;
+}
+
+::-webkit-slider-runnable-track {
+    background: rgba(221, 221, 221, 0.157);
+}
+
+
+::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 40px;
+    background: #FFFFFF;
+
+    box-shadow: -200px 0 0 200px #4271FF;
+    border-radius: 1vw;
+}
+
+::-moz-range-track {
+    height: 40px;
+    background: #ddd;
+    border-radius: 1vw;
+}
+
+::-webkit-slider-runnable-track {
+    background: rgba(221, 221, 221, 0.157);
+}
+
+
+html {
+    font-size: 16.0px;
+}
+
+@media screen and (width: 7680px) and (height: 4320px) {
+    html {
+        font-size: 64px;
+    }
+}
+
+@media screen and (width: 5120px) and (height: 2880px) {
+    html {
+        font-size: 42.65px;
+    }
+}
+
+@media screen and (width: 3840px) and (height: 2160px) {
+    html {
+        font-size: 32px;
+    }
+}
+
+@media screen and (width: 2560px) and (height: 1440px) {
+    html {
+        font-size: 21.33px;
+    }
+}
+
+@media screen and (width: 1680px) and (height: 1050px) {
+    html {
+        font-size: 14px;
+    }
+
+    .radio {
+        top: 35rem
+    }
+}
+
+@media screen and (width: 1600px) and (height: 900px) {
+    html {
+        font-size: 13.33px;
+    }
+}
+
+@media screen and (width: 1440px) and (height: 900px) {
+    html {
+        font-size: 12px;
+    }
+
+    .radio {
+        top: 35rem
+    }
+}
+
+@media screen and (width: 1366px) and (height: 768px) {
+    html {
+        font-size: 11.385px;
+    }
+}
+
+@media screen and (width: 1280px) and (height: 1024px) {
+    html {
+        font-size: 10.66px;
+    }
+
+    .radio {
+        top: 57rem
+    }
+}
+
+@media screen and (width: 1280px) and (height: 800px) {
+    html {
+        font-size: 11px;
+    }
+
+    .radio {
+        top: 35rem
+    }
+}
+
+@media screen and (width: 1280px) and (height: 720px) {
+    html {
+        font-size: 10.6645px;
+    }
+}
+
+@media screen and (width: 854px) and (height: 480px) {
+    html {
+        font-size: 7.1px;
+    }
+}
+
+@media screen and (width: 640px) and (height: 360px) {
+    html {
+        font-size: 5.25px;
+    }
+}

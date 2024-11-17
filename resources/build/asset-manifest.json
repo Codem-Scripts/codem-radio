@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/resources/build/static/js/bundle.js",
+    "static/media/radio.svg": "/resources/build/static/media/radio.7bcdfecdd4d2bccc23c8.svg",
+    "index.html": "/resources/build/index.html"
+  },
+  "entrypoints": [
+    "static/js/bundle.js",
+    "main.2fd4c3c5691b6aa478ce.hot-update.js"
+  ]
+}
